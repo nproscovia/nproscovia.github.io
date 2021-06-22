@@ -1,0 +1,16 @@
+h2{
+    font-size: 32px; 
+    text-align: center;
+}
+
+h3,h2{
+    background-color:rgb(182, 176, 176);
+    color :rgb(129, 129, 37);
+}
+.one{
+    background-color:rgb(194, 194, 111);
+}
+
+body{
+    background-color:rgb(218, 209, 209);
+}
