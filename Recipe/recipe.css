@@ -5,11 +5,16 @@ h2{
 
 h3,h2{
     background-color:#F0F0F0;
-    color :rgb(177, 177, 87);
+    color :#a4a400;
+    
     font-family: Helvetica;
 }
+h3{
+     
+    text-align: left;
+}
 .one{
-    background-color:rgb(194, 194, 111);
+    background-color:yellow;
 }
 
 body{
@@ -22,3 +27,6 @@ body{
 .nine{
     float: right;
 }
+a:link {
+    color: #a4a400;
+  }
