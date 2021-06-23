@@ -4,13 +4,14 @@ h2{
 }
 
 h3,h2{
-    background-color:rgb(182, 176, 176);
-    color :rgb(129, 129, 37);
+    background-color:#F0F0F0;
+    color :rgb(177, 177, 87);
 }
 .one{
     background-color:rgb(194, 194, 111);
 }
 
 body{
-    background-color:rgb(218, 209, 209);
+    background-color:A4A400;
+    background-image: url("silverware.jpg");
 }

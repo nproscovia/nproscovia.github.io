@@ -7,3 +7,14 @@ h1{
 body {
     background-color: grey;
     }
+    .one{
+        color:yellow;
+        font-family: Verdana;
+    }
+    .two{
+        color:white;
+        
+    }
+    .three{
+        color:red;
+    }
