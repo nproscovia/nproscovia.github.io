@@ -6,12 +6,19 @@ h2{
 h3,h2{
     background-color:#F0F0F0;
     color :rgb(177, 177, 87);
+    font-family: Helvetica;
 }
 .one{
     background-color:rgb(194, 194, 111);
 }
 
 body{
-    background-color:A4A400;
+    background-color:white;
     background-image: url("silverware.jpg");
+}
+.seven{
+    text-align: right;
+}
+.nine{
+    float: right;
 }
