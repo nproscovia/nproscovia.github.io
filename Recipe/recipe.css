@@ -32,4 +32,8 @@ body{
 a:link {
     color: #a4a400;
   }
+  em.ten{
+    
+        font-weight: bold;
+  }
 
