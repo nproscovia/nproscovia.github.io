@@ -14,7 +14,8 @@ h3{
     text-align: left;
 }
 .one{
-    background-color:yellow;
+    background-color:#FFFFA8;
+    font-style: italic;
 }
 
 body{
@@ -27,6 +28,8 @@ body{
 .nine{
     float: right;
 }
+
 a:link {
     color: #a4a400;
   }
+
