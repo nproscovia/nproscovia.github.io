@@ -29,7 +29,7 @@ body{
     float: right;
 }
 
-a:link {
+a:visited {
     color: #a4a400;
   }
   em.ten{
