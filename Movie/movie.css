@@ -1,5 +1,7 @@
 body{
     background-image:url("background.png");
+    margin: 0px;
+    display:block;
 }
 .one{
     display: flex;
@@ -32,6 +34,9 @@ background-image:url("bannerbg.png");
 .five{
     float: right;
     margin-bottom: 10pt;
+    border-radius: 12px;
+    width:250px;
+    height:300px;
 }
 .six{
     background-color: #A2B964;
@@ -39,7 +44,9 @@ background-image:url("bannerbg.png");
     position:absolute;
     right:0;
     border-spacing: 10px;
+    border-radius: 12px;
     
+   
    
 }
 .seven{
@@ -52,6 +59,8 @@ background-image:url("bannerbg.png");
 }
 .nine{
     background-color: #A2B964;
+    padding: 5px;
+    border-radius: 12px;
    
 }
 .ten{
@@ -61,6 +70,7 @@ background-image:url("bannerbg.png");
 }
 .eleven{
     background-image: url(rbg.png);
+    border-radius: 12px;
     
 }
 .twe{
@@ -89,6 +99,9 @@ background-image:url("bannerbg.png");
     display: table;
     clear: both;
   }
+  .row{
+      width: 500px;
+  }
   .fourteen{
       background-color: #E8DC9B;
       border:2px gray;
@@ -106,4 +119,7 @@ background-image:url("bannerbg.png");
   }
   .im1{
       float:left;
+  }
+  .img2{
+    opacity: 0.5;
   }
