@@ -1,0 +1,109 @@
+body{
+    background-image:url("background.png");
+}
+.one{
+    display: flex;
+
+    height: 50px;
+justify-content: center;
+background-image:url("bannerbg.png");
+   
+}
+.two{
+    float: right;
+}
+.three{
+    border:4px solid gray;
+    border-radius: 20px;
+    width:800px;
+    position:relative;
+    left: 0;
+   right: 0;
+   margin: auto
+   
+ 
+}
+.four{
+    font-size: 24pt; 
+    text-align: center;
+    font-family: Verdana;
+    text-shadow: 3px 3px #999999;
+}
+.five{
+    float: right;
+    margin-bottom: 10pt;
+}
+.six{
+    background-color: #A2B964;
+    width: 250px;
+    position:absolute;
+    right:0;
+    border-spacing: 10px;
+    
+   
+}
+.seven{
+    font-size: 8pt; 
+   
+    font-family: Arial;
+}
+.eight{
+    margin-bottom: 10pt;
+}
+.nine{
+    background-color: #A2B964;
+   
+}
+.ten{
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 5pt;
+}
+.eleven{
+    background-image: url(rbg.png);
+    
+}
+.twe{
+    vertical-align: middle;
+    height:83px;
+}
+.thir{
+    color: red;
+    font-size: 48pt;
+}
+
+.columnb {
+    float: left;
+    width: 47%;
+   
+  }
+  .columnc{
+    float: right;
+    width: 47%;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .fourteen{
+      background-color: #E8DC9B;
+      border:2px gray;
+    border-radius: 10px;
+    font-size: 24pt;
+    padding-left: 8px;
+   
+    
+
+  }
+
+  .fifth{
+    font-size: 8pt;
+    font-weight: bold;
+  }
+  .im1{
+      float:left;
+  }
