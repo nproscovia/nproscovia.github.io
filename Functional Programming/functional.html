@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Functional Programming</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // initialize mocha
+        mocha.setup('bdd');
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+
+    </script>
+
+    <script>
+        //Function 4
+        function sum(arr) {
+            const result = (accumulator, curValue) => accumulator + curValue;
+            return arr.reduce(result);
+        }
+
+        function multiply(arr) {
+            const result = (accumulator, curValue) => accumulator * curValue;
+            return arr.reduce(result);
+        }
+
+        //Function 5
+        function reverse(str) {
+            const result = (str) => {
+                return str.split("").reduce((accumulator, curValue) => curValue + accumulator, "");
+            }
+            return result(str);
+        }
+
+        //Function 7
+        function filterLongWords(arr, i) {
+            return arr.filter(words => words.length > i);
+        }
+
+    </script>
+    <script>
+        describe("sum", function () {
+            it("summing all numbers in an array of numbers",
+                function () {
+                    assert.equal(12, sum([6,6]));
+                });
+        });
+
+        describe("multiply", function () {
+            it("multiplying all numbers in an array of numbers",
+                function () {
+                    assert.equal(36, multiply([6,6]));
+                });
+        });
+
+        describe("reverse", function () {
+            it("reversing a string",
+                function () {
+                    assert.equal("olleh", reverse("hello"));
+                });
+        });
+
+        describe("filterLongWords", function () {
+            it("given an array, return an array of words longer than i",
+                function () {
+                    assert.equal(["hello", "hey", "hellos"].toString(), filterLongWords(["hello", "hey", "hi", "hellos"], 2));
+                });
+        });
+
+    </script>
+</head>
+
+<body>
+<div id="mocha"></div>
+<script>
+    mocha.run();
+
+</script>
+</body>
+
+</html>
