@@ -5,7 +5,7 @@ $(function () {
         const $status = $('#status');
         const $maze = $('#maze');
         $boundaries.removeClass('youlose'); 
-        $status.text("Maze has begun! Find your way through");
+        $status.text("click the 'S' to begin");
 
         $boundaries.mouseenter(function () {
             $boundaries.addClass('youlose');
