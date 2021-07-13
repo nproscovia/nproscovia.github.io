@@ -12,7 +12,7 @@ app.use(express.urlencoded()); // to support URL-encoded bodies
 
 app.use('/css', express.static(path.join(__dirname, 'css')));
 
-app.use(session({secret: 'n0tc0mm0nS4lt!#'}));
+app.use(session({secret: 'my Secrete'}));
 
 
 
@@ -48,7 +48,7 @@ app.post('/result', (req, res) => {
 
     const name = req.body.name ? req.body.name : 'person';
 
-    const age = req.body.age ? req.body.age : 'unknown';
+    const age = req.body.age ? req.body.age : '0';
 
     req.session.person = {
 
@@ -66,7 +66,7 @@ app.get('/output', (req, res) => {
 
     const person = req.session.person;
 
-    res.send(`Welcome ${person.name} - age ${person.age}`);
+    res.send(`Welcome ${person.name} - your age is ${person.age}`);
 
 })
 
