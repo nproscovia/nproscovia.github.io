@@ -1,0 +1,41 @@
+<%- include('fragments/header.ejs')%>
+    <link href="/css/product.css" rel="stylesheet" />
+    <title>Product List</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/product.js"></script>
+    </head>
+
+    <body>
+
+        <form id="productForm" method="POST" action="/addToCart">
+            <input type="hidden" name="id" value=<%=product.id%> />
+            <div id="container">
+                <label>Name:</label>
+                <span id="name">
+                <%=product.name%>
+            </span>
+                <label>Description:</label>
+                <span>
+                <%=product.description%>
+            </span>
+
+                <label>Price:</label>
+                <span id="price">
+                <%=product.price%>
+            </span>
+
+                <label>Id:</label>
+                <span>
+                <%=product.id%>
+            </span>
+                <input type="hidden" name="name" value=<%=product.name %> />
+                <input type="hidden" name="price" value=<%=product.price%> />
+
+                <input type="submit" value="Add to cart " />
+            </div>
+        </form>
+        <div id="msg">
+            item added
+        </div>
+        <a id="linktocart" href="/shoppingcart">check cart</a>
+        <%- include('fragments/footer.ejs')%>

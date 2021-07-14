@@ -1,0 +1,23 @@
+<%- include('fragments/header') %>
+    <link href="/css/shoppingcart.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div id="list-container">
+
+            <% for(const k in products){%>
+                <div id="container">
+                    <label>Name:</label>
+                    <span><%=products[k].name%></span>
+
+                    <label>Price:</label>
+                    <span><%=products[k].price%></span>
+
+                    <label>Quantity:</label>
+                    <span><%=products[k].quantity%></span>
+
+                </div>
+                <%}%>
+
+        </div>
+        <%- include('fragments/footer.ejs')%>
